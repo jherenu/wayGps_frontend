@@ -1,0 +1,23 @@
+# Node modules (para cuando creemos React)
+node_modules/
+/dist
+/build
+
+# Archivos de entorno
+.env
+.env.local
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+✅ VERIFICACIÓN
+Después de pegar y guardar (Ctrl+S), cerrá el Notepad.
+¿Guardaste el .gitignore?
+Esperando confirmación... 🎯ReintentarClaude puede cometer errores. Por favor, verifique las respuestas.

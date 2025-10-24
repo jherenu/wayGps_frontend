@@ -1,0 +1,100 @@
+/* Estilos específicos para el módulo de Equipos GPS */
+
+.sidebar {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .position-sticky {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Estados de equipos */
+.badge-operativo {
+    background-color: #28a745;
+    color: white;
+}
+
+.badge-mantenimiento {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.badge-stock {
+    background-color: #6c757d;
+    color: white;
+}
+
+.badge-baja {
+    background-color: #dc3545;
+    color: white;
+}
+
+.table-responsive {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.loading {
+    display: none;
+}
+
+.filter-section {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Estilos para campos obligatorios */
+.form-label .text-danger {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 3px;
+}
+
+/* Estilos para menú móvil */
+@media (max-width: 767.98px) {
+    .sidebar {
+        position: fixed;
+        top: 56px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 56px);
+        z-index: 1000;
+        overflow-y: auto;
+    }
+    
+    .sidebar.show {
+        display: block !important;
+    }
+    
+    .main-content {
+        margin-top: 56px;
+    }
+    
+    .filter-section .col-md-3,
+    .filter-section .col-md-2 {
+        margin-bottom: 0.5rem;
+    }
+}
+
